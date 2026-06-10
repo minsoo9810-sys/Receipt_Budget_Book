@@ -15,12 +15,26 @@ class SupabaseManager:
         """특정 이미지의 Public URL을 가져옵니다."""
         return self.supabase.storage.from_(bucket_name).get_public_url(file_name)
 
-    def insert_ocr_result(self, image_name, all_text, confidence, total_amount=0):
-        """OCR 분석 결과를 DB 테이블에 저장합니다."""
-        data = {
+    def insert_ocr_result(self, image_name, all_text, confidence, ocr_items):
+        # 1. ocr_raw 테이블에 영수증 저장
+        raw_data = {
             "image_name": image_name,
             "all_text": all_text,
-            "total_amount": total_amount,
             "confidence": confidence
         }
-        return self.supabase.table("receipt_ocr").insert(data).execute()
+        raw_result = self.supabase.table("ocr_raw").insert(raw_data).execute()
+    
+        # 2. 저장된 행의 id 가져오기
+        ocr_raw_id = raw_result.data[0]["id"]
+    
+        # 3. ocr_raw_items에 텍스트 조각 38개 저장
+        items_data = [
+            {
+                "ocr_raw_id": ocr_raw_id,
+                "text": item["text"],
+                "score": item["score"],
+                "box": item["box"]
+            }
+            for item in ocr_items
+        ]
+        return self.supabase.table("ocr_raw_items").insert(items_data).execute()

@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# OCR 결과 JSON (로컬 임시 파일)
+receipt_ocr_raw.json
+receipt_ocr_lines.json
+temp_receipt.jpg
+
+# 환경변수 (API 키 등)
+.env
