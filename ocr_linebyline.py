@@ -69,7 +69,7 @@ def group_ocr_items_into_lines(
     if y_threshold is None:
         heights = [it["h"] for it in items if it["h"] > 0]
         median_h = _median(heights, default=30.0)
-        y_threshold = median_h * 0.6
+        y_threshold = median_h * 0.45
 
     lines: List[Dict[str, Any]] = []
 
