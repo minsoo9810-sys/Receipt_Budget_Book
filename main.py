@@ -111,8 +111,10 @@ def main():
         
     print(f"총 {len(images)}개의 이미지를 발견했습니다. 전체 분석을 시작합니다.\n" + "="*40)
 
-    # 테스트를 위해 스토리지의 첫 번째 이미지 선택
+    # 테스트를 위해 스토리지의  다섯 번째 이미지까지 선택
     for idx, img_info in enumerate(images, start=1):
+        if idx > 2:
+            break
         target_image = img_info['name']
         
         # .emptyFolderPlaceholder 같은 시스템 특수 파일은 건너넙니다.
@@ -169,7 +171,7 @@ def main():
             receipt_id = db_manager.insert_receipt(
                 ocr_raw_id=ocr_raw_id,
                 store_name=parsed["store_name"],
-                purchased_st=parsed["purchase_date"],
+                purchased_at=parsed["purchase_date"],
                 total_amount=parsed["total_amount"]
             )
             db_manager.insert_receipt_items(receipt_id, parsed["items"])
@@ -183,7 +185,7 @@ def main():
             # 작업이 끝나면 임시로 받았던 이미지 파일 삭제
             if os.path.exists(local_temp_path):
                 os.remove(local_temp_path)
-        break
+        
 
 if __name__ == "__main__":
     main()

@@ -46,11 +46,11 @@ class SupabaseManager:
     def get_ocr_raw(self, ocr_raw_id: int):
         return self.supabase.table("ocr_raw").select("*").eq("id", ocr_raw_id).single().execute()
     
-    def insert_receipt(self, ocr_raw_id: int, store_name: str, purchased_st: str, total_amount: int) -> int:
+    def insert_receipt(self, ocr_raw_id: int, store_name: str, purchased_at: str, total_amount: int) -> int:
         data = {
             "ocr_raw_id": ocr_raw_id,
             "store_name": store_name,
-            "purchased_st": purchased_st,
+            "purchased_at": purchased_at,
             "total_amount": total_amount
         }
         result = self.supabase.table("receipts").insert(data).execute()

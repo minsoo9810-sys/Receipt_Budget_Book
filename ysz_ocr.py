@@ -49,11 +49,6 @@ def run_ocr(image_path: str, output_path: str = DEFAULT_OUTPUT_PATH, ocr_model=N
         if "rec_scores" in page:
             scores.extend(page["rec_scores"])  # 추출한 글씨에 대한 신뢰도
 
-    for b, t, s in zip(boxes, texts, scores):
-        print(f"인식한 박스의 위치 {b}")
-        print(f"인식한 텍스트 : {t}   (신뢰도={s:.3f})")
-        print("-------------------------------")
-
     ocr_items = []
 
     for i, (box, text, score) in enumerate(zip(boxes, texts, scores), start=1):
