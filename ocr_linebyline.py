@@ -98,6 +98,14 @@ def group_ocr_items_into_lines(
     return lines
 
 
+def load_raw_result(json_path: str) -> Dict[str, Any]:
+    with open(json_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+def save_line_result(line_result: Dict[str, Any], output_path: str) -> None:
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(line_result, f, ensure_ascii=False, indent=2)
+
 def build_line_result(raw_result: Dict[str, Any]) -> Dict[str, Any]:
     """
     ysz_ocr.py의 raw_result 전체를 받아 line 단위 결과 JSON 구조로 변환한다.
@@ -129,26 +137,16 @@ def build_line_result(raw_result: Dict[str, Any]) -> Dict[str, Any]:
         ],
     }
 
+def run_line_grouping(ocr_raw_id: int, db_manager) -> Dict[str, Any]:
+    result = db_manager.get_ocr_items(ocr_raw_id)
+    items = result.data
 
-def load_raw_result(json_path: str) -> Dict[str, Any]:
-    with open(json_path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    for item in items:
+        if isinstance(item["box"], str):
+            item["box"] = json.loads(item["box"])
 
-
-def save_line_result(line_result: Dict[str, Any], output_path: str) -> None:
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(line_result, f, ensure_ascii=False, indent=2)
-
-
-def run_line_grouping(
-    raw_json_path: str = "receipt_ocr_raw.json",
-    output_path: str = "receipt_ocr_lines.json",
-) -> Dict[str, Any]:
-    raw_result = load_raw_result(raw_json_path)
-    line_result = build_line_result(raw_result)
-    save_line_result(line_result, output_path)
-    print(f"줄 단위 결과 저장 완료: {output_path}")
-    return line_result
+    raw_result = {"image_path": None, "ocr_result": items}
+    return build_line_result(raw_result)
 
 
 if __name__ == "__main__":
