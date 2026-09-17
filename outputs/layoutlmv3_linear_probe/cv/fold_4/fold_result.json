@@ -1,0 +1,1696 @@
+{
+  "fold": 4,
+  "train_chunk_count": 206,
+  "validation_chunk_count": 48,
+  "baseline_validation": {
+    "precision": 0.015151515151515152,
+    "recall": 0.0411522633744856,
+    "f1": 0.0221483942414175,
+    "accuracy": 0.06002265005662514,
+    "per_entity": {
+      "ADDRESS": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "DATE": {
+        "precision": 0.017857142857142856,
+        "recall": 0.25,
+        "f1": 0.03333333333333333
+      },
+      "ITEM_NAME": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "ITEM_TOTAL": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "QUANTITY": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "STORE_NAME": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "TOTAL_AMOUNT": {
+        "precision": 0.07547169811320754,
+        "recall": 0.09090909090909091,
+        "f1": 0.08247422680412371
+      },
+      "UNIT_PRICE": {
+        "precision": 0.005747126436781609,
+        "recall": 0.037037037037037035,
+        "f1": 0.009950248756218905
+      }
+    },
+    "loss": 2.667149623235067
+  },
+  "best_epoch": 25,
+  "best_validation": {
+    "precision": 0.6842105263157895,
+    "recall": 0.37448559670781895,
+    "f1": 0.48404255319148937,
+    "accuracy": 0.7938844847112118,
+    "per_entity": {
+      "ADDRESS": {
+        "precision": 0.2,
+        "recall": 0.11764705882352941,
+        "f1": 0.14814814814814817
+      },
+      "DATE": {
+        "precision": 0.8333333333333334,
+        "recall": 0.5,
+        "f1": 0.625
+      },
+      "ITEM_NAME": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "ITEM_TOTAL": {
+        "precision": 0.7105263157894737,
+        "recall": 0.675,
+        "f1": 0.6923076923076923
+      },
+      "QUANTITY": {
+        "precision": 0.7692307692307693,
+        "recall": 0.7142857142857143,
+        "f1": 0.7407407407407408
+      },
+      "STORE_NAME": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "TOTAL_AMOUNT": {
+        "precision": 0.8076923076923077,
+        "recall": 0.4772727272727273,
+        "f1": 0.6000000000000001
+      },
+      "UNIT_PRICE": {
+        "precision": 0.6470588235294118,
+        "recall": 0.4074074074074074,
+        "f1": 0.5
+      }
+    },
+    "loss": 0.6752199133237203
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.552510298215426,
+      "validation": {
+        "precision": 0.019569471624266144,
+        "recall": 0.0411522633744856,
+        "f1": 0.026525198938992044,
+        "accuracy": 0.2582106455266138,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "DATE": {
+            "precision": 0.021551724137931036,
+            "recall": 0.25,
+            "f1": 0.03968253968253968
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "QUANTITY": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.1111111111111111,
+            "recall": 0.09090909090909091,
+            "f1": 0.09999999999999999
+          },
+          "UNIT_PRICE": {
+            "precision": 0.006802721088435374,
+            "recall": 0.037037037037037035,
+            "f1": 0.011494252873563218
+          }
+        },
+        "loss": 2.429412285486857
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.0929928834621725,
+      "validation": {
+        "precision": 0.0641025641025641,
+        "recall": 0.0205761316872428,
+        "f1": 0.03115264797507788,
+        "accuracy": 0.6568516421291053,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "DATE": {
+            "precision": 0.12903225806451613,
+            "recall": 0.2,
+            "f1": 0.1568627450980392
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "QUANTITY": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.125,
+            "recall": 0.022727272727272728,
+            "f1": 0.038461538461538464
+          },
+          "UNIT_PRICE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "loss": 1.7984925905863445
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.4465208603785589,
+      "validation": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "accuracy": 0.7066817667044167,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "DATE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "QUANTITY": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "UNIT_PRICE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "loss": 1.2402328252792358
+      }
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.1364003924223094,
+      "validation": {
+        "precision": 0.6428571428571429,
+        "recall": 0.037037037037037035,
+        "f1": 0.07003891050583658,
+        "accuracy": 0.7157417893544734,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "DATE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "QUANTITY": {
+            "precision": 0.8181818181818182,
+            "recall": 0.32142857142857145,
+            "f1": 0.46153846153846156
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "UNIT_PRICE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "loss": 1.0104021430015564
+      }
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.9704263439545264,
+      "validation": {
+        "precision": 0.6875,
+        "recall": 0.13580246913580246,
+        "f1": 0.22680412371134023,
+        "accuracy": 0.739524348810872,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "DATE": {
+            "precision": 1.0,
+            "recall": 0.05,
+            "f1": 0.09523809523809523
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.8,
+            "recall": 0.3,
+            "f1": 0.4363636363636363
+          },
+          "QUANTITY": {
+            "precision": 0.68,
+            "recall": 0.6071428571428571,
+            "f1": 0.6415094339622641
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.2,
+            "recall": 0.022727272727272728,
+            "f1": 0.04081632653061225
+          },
+          "UNIT_PRICE": {
+            "precision": 1.0,
+            "recall": 0.07407407407407407,
+            "f1": 0.13793103448275862
+          }
+        },
+        "loss": 0.8992704351743063
+      }
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.8712421839053814,
+      "validation": {
+        "precision": 0.7014925373134329,
+        "recall": 0.1934156378600823,
+        "f1": 0.30322580645161296,
+        "accuracy": 0.753114382785957,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "DATE": {
+            "precision": 1.0,
+            "recall": 0.1,
+            "f1": 0.18181818181818182
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.7307692307692307,
+            "recall": 0.475,
+            "f1": 0.5757575757575758
+          },
+          "QUANTITY": {
+            "precision": 0.7083333333333334,
+            "recall": 0.6071428571428571,
+            "f1": 0.6538461538461539
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.625,
+            "recall": 0.11363636363636363,
+            "f1": 0.1923076923076923
+          },
+          "UNIT_PRICE": {
+            "precision": 0.5714285714285714,
+            "recall": 0.14814814814814814,
+            "f1": 0.23529411764705882
+          }
+        },
+        "loss": 0.8371720512708029
+      }
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.8201200641118563,
+      "validation": {
+        "precision": 0.7325581395348837,
+        "recall": 0.25925925925925924,
+        "f1": 0.38297872340425526,
+        "accuracy": 0.7701019252548131,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "DATE": {
+            "precision": 0.6666666666666666,
+            "recall": 0.1,
+            "f1": 0.1739130434782609
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.7096774193548387,
+            "recall": 0.55,
+            "f1": 0.619718309859155
+          },
+          "QUANTITY": {
+            "precision": 0.75,
+            "recall": 0.6428571428571429,
+            "f1": 0.6923076923076924
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8235294117647058,
+            "recall": 0.3181818181818182,
+            "f1": 0.45901639344262296
+          },
+          "UNIT_PRICE": {
+            "precision": 0.7,
+            "recall": 0.25925925925925924,
+            "f1": 0.37837837837837834
+          }
+        },
+        "loss": 0.7976313432057699
+      }
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.7667653514788701,
+      "validation": {
+        "precision": 0.7473684210526316,
+        "recall": 0.29218106995884774,
+        "f1": 0.42011834319526625,
+        "accuracy": 0.7791619479048698,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "DATE": {
+            "precision": 0.8571428571428571,
+            "recall": 0.3,
+            "f1": 0.4444444444444444
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.71875,
+            "recall": 0.575,
+            "f1": 0.6388888888888888
+          },
+          "QUANTITY": {
+            "precision": 0.76,
+            "recall": 0.6785714285714286,
+            "f1": 0.7169811320754718
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.7894736842105263,
+            "recall": 0.3409090909090909,
+            "f1": 0.4761904761904762
+          },
+          "UNIT_PRICE": {
+            "precision": 0.7272727272727273,
+            "recall": 0.2962962962962963,
+            "f1": 0.42105263157894735
+          }
+        },
+        "loss": 0.7713129719098409
+      }
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.7471478398029621,
+      "validation": {
+        "precision": 0.75,
+        "recall": 0.32098765432098764,
+        "f1": 0.44956772334293943,
+        "accuracy": 0.7882219705549264,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "DATE": {
+            "precision": 0.9,
+            "recall": 0.45,
+            "f1": 0.6
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.6857142857142857,
+            "recall": 0.6,
+            "f1": 0.64
+          },
+          "QUANTITY": {
+            "precision": 0.7916666666666666,
+            "recall": 0.6785714285714286,
+            "f1": 0.7307692307692307
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.782608695652174,
+            "recall": 0.4090909090909091,
+            "f1": 0.537313432835821
+          },
+          "UNIT_PRICE": {
+            "precision": 0.7272727272727273,
+            "recall": 0.2962962962962963,
+            "f1": 0.42105263157894735
+          }
+        },
+        "loss": 0.7519607742627462
+      }
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.7279851803412805,
+      "validation": {
+        "precision": 0.7017543859649122,
+        "recall": 0.3292181069958848,
+        "f1": 0.44817927170868344,
+        "accuracy": 0.7882219705549264,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "DATE": {
+            "precision": 0.9,
+            "recall": 0.45,
+            "f1": 0.6
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.6842105263157895,
+            "recall": 0.65,
+            "f1": 0.6666666666666667
+          },
+          "QUANTITY": {
+            "precision": 0.7916666666666666,
+            "recall": 0.6785714285714286,
+            "f1": 0.7307692307692307
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.782608695652174,
+            "recall": 0.4090909090909091,
+            "f1": 0.537313432835821
+          },
+          "UNIT_PRICE": {
+            "precision": 0.5714285714285714,
+            "recall": 0.2962962962962963,
+            "f1": 0.3902439024390244
+          }
+        },
+        "loss": 0.7385598421096802
+      }
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.7120759166204013,
+      "validation": {
+        "precision": 0.6890756302521008,
+        "recall": 0.3374485596707819,
+        "f1": 0.4530386740331492,
+        "accuracy": 0.7893544733861835,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2,
+            "recall": 0.058823529411764705,
+            "f1": 0.0909090909090909
+          },
+          "DATE": {
+            "precision": 0.9,
+            "recall": 0.45,
+            "f1": 0.6
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.6585365853658537,
+            "recall": 0.675,
+            "f1": 0.6666666666666667
+          },
+          "QUANTITY": {
+            "precision": 0.7916666666666666,
+            "recall": 0.6785714285714286,
+            "f1": 0.7307692307692307
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.7727272727272727,
+            "recall": 0.38636363636363635,
+            "f1": 0.515151515151515
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6,
+            "recall": 0.3333333333333333,
+            "f1": 0.42857142857142855
+          }
+        },
+        "loss": 0.7270151376724243
+      }
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.701834146793072,
+      "validation": {
+        "precision": 0.7321428571428571,
+        "recall": 0.3374485596707819,
+        "f1": 0.4619718309859155,
+        "accuracy": 0.7904869762174406,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "DATE": {
+            "precision": 0.9,
+            "recall": 0.45,
+            "f1": 0.6
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.7027027027027027,
+            "recall": 0.65,
+            "f1": 0.6753246753246753
+          },
+          "QUANTITY": {
+            "precision": 0.7916666666666666,
+            "recall": 0.6785714285714286,
+            "f1": 0.7307692307692307
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8,
+            "recall": 0.45454545454545453,
+            "f1": 0.5797101449275363
+          },
+          "UNIT_PRICE": {
+            "precision": 0.5714285714285714,
+            "recall": 0.2962962962962963,
+            "f1": 0.3902439024390244
+          }
+        },
+        "loss": 0.7189032832781473
+      }
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.6883642902741065,
+      "validation": {
+        "precision": 0.696,
+        "recall": 0.35802469135802467,
+        "f1": 0.4728260869565217,
+        "accuracy": 0.7938844847112118,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.25,
+            "recall": 0.11764705882352941,
+            "f1": 0.15999999999999998
+          },
+          "DATE": {
+            "precision": 0.9090909090909091,
+            "recall": 0.5,
+            "f1": 0.6451612903225806
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.675,
+            "recall": 0.675,
+            "f1": 0.675
+          },
+          "QUANTITY": {
+            "precision": 0.7916666666666666,
+            "recall": 0.6785714285714286,
+            "f1": 0.7307692307692307
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8,
+            "recall": 0.45454545454545453,
+            "f1": 0.5797101449275363
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6,
+            "recall": 0.3333333333333333,
+            "f1": 0.42857142857142855
+          }
+        },
+        "loss": 0.7121279239654541
+      }
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.6813850356982305,
+      "validation": {
+        "precision": 0.696,
+        "recall": 0.35802469135802467,
+        "f1": 0.4728260869565217,
+        "accuracy": 0.7938844847112118,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2857142857142857,
+            "recall": 0.11764705882352941,
+            "f1": 0.16666666666666666
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.675,
+            "recall": 0.675,
+            "f1": 0.675
+          },
+          "QUANTITY": {
+            "precision": 0.7916666666666666,
+            "recall": 0.6785714285714286,
+            "f1": 0.7307692307692307
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8,
+            "recall": 0.45454545454545453,
+            "f1": 0.5797101449275363
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6,
+            "recall": 0.3333333333333333,
+            "f1": 0.42857142857142855
+          }
+        },
+        "loss": 0.7071316838264465
+      }
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.6595434729869549,
+      "validation": {
+        "precision": 0.7096774193548387,
+        "recall": 0.36213991769547327,
+        "f1": 0.47956403269754777,
+        "accuracy": 0.7950169875424689,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.3333333333333333,
+            "recall": 0.11764705882352941,
+            "f1": 0.1739130434782609
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.6923076923076923,
+            "recall": 0.675,
+            "f1": 0.6835443037974683
+          },
+          "QUANTITY": {
+            "precision": 0.7916666666666666,
+            "recall": 0.6785714285714286,
+            "f1": 0.7307692307692307
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8,
+            "recall": 0.45454545454545453,
+            "f1": 0.5797101449275363
+          },
+          "UNIT_PRICE": {
+            "precision": 0.625,
+            "recall": 0.37037037037037035,
+            "f1": 0.4651162790697674
+          }
+        },
+        "loss": 0.7002443075180054
+      }
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.6595994692582351,
+      "validation": {
+        "precision": 0.7063492063492064,
+        "recall": 0.3662551440329218,
+        "f1": 0.48238482384823844,
+        "accuracy": 0.7950169875424689,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2857142857142857,
+            "recall": 0.11764705882352941,
+            "f1": 0.16666666666666666
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.6923076923076923,
+            "recall": 0.675,
+            "f1": 0.6835443037974683
+          },
+          "QUANTITY": {
+            "precision": 0.7916666666666666,
+            "recall": 0.6785714285714286,
+            "f1": 0.7307692307692307
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8,
+            "recall": 0.45454545454545453,
+            "f1": 0.5797101449275363
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6470588235294118,
+            "recall": 0.4074074074074074,
+            "f1": 0.5
+          }
+        },
+        "loss": 0.6958517630894979
+      }
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.6423200712754176,
+      "validation": {
+        "precision": 0.7154471544715447,
+        "recall": 0.36213991769547327,
+        "f1": 0.4808743169398907,
+        "accuracy": 0.7950169875424689,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.3333333333333333,
+            "recall": 0.11764705882352941,
+            "f1": 0.1739130434782609
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.6923076923076923,
+            "recall": 0.675,
+            "f1": 0.6835443037974683
+          },
+          "QUANTITY": {
+            "precision": 0.7916666666666666,
+            "recall": 0.6785714285714286,
+            "f1": 0.7307692307692307
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8,
+            "recall": 0.45454545454545453,
+            "f1": 0.5797101449275363
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6666666666666666,
+            "recall": 0.37037037037037035,
+            "f1": 0.47619047619047616
+          }
+        },
+        "loss": 0.693972667058309
+      }
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.6457017018244817,
+      "validation": {
+        "precision": 0.6692307692307692,
+        "recall": 0.35802469135802467,
+        "f1": 0.46648793565683644,
+        "accuracy": 0.7904869762174406,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2,
+            "recall": 0.11764705882352941,
+            "f1": 0.14814814814814817
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.6428571428571429,
+            "recall": 0.675,
+            "f1": 0.6585365853658537
+          },
+          "QUANTITY": {
+            "precision": 0.7916666666666666,
+            "recall": 0.6785714285714286,
+            "f1": 0.7307692307692307
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8,
+            "recall": 0.45454545454545453,
+            "f1": 0.5797101449275363
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6,
+            "recall": 0.3333333333333333,
+            "f1": 0.42857142857142855
+          }
+        },
+        "loss": 0.6895441015561422
+      }
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.6409726601380569,
+      "validation": {
+        "precision": 0.6818181818181818,
+        "recall": 0.37037037037037035,
+        "f1": 0.48,
+        "accuracy": 0.7927519818799547,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2,
+            "recall": 0.11764705882352941,
+            "f1": 0.14814814814814817
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.6585365853658537,
+            "recall": 0.675,
+            "f1": 0.6666666666666667
+          },
+          "QUANTITY": {
+            "precision": 0.8,
+            "recall": 0.7142857142857143,
+            "f1": 0.7547169811320756
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8,
+            "recall": 0.45454545454545453,
+            "f1": 0.5797101449275363
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6470588235294118,
+            "recall": 0.4074074074074074,
+            "f1": 0.5
+          }
+        },
+        "loss": 0.6860928535461426
+      }
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.6379566651124221,
+      "validation": {
+        "precision": 0.6818181818181818,
+        "recall": 0.37037037037037035,
+        "f1": 0.48,
+        "accuracy": 0.7938844847112118,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2,
+            "recall": 0.11764705882352941,
+            "f1": 0.14814814814814817
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.675,
+            "recall": 0.675,
+            "f1": 0.675
+          },
+          "QUANTITY": {
+            "precision": 0.8,
+            "recall": 0.7142857142857143,
+            "f1": 0.7547169811320756
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8,
+            "recall": 0.45454545454545453,
+            "f1": 0.5797101449275363
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6470588235294118,
+            "recall": 0.4074074074074074,
+            "f1": 0.5
+          }
+        },
+        "loss": 0.6847570141156515
+      }
+    },
+    {
+      "epoch": 21,
+      "train_loss": 0.6305135350960952,
+      "validation": {
+        "precision": 0.6842105263157895,
+        "recall": 0.37448559670781895,
+        "f1": 0.48404255319148937,
+        "accuracy": 0.7950169875424689,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2,
+            "recall": 0.11764705882352941,
+            "f1": 0.14814814814814817
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.6585365853658537,
+            "recall": 0.675,
+            "f1": 0.6666666666666667
+          },
+          "QUANTITY": {
+            "precision": 0.8,
+            "recall": 0.7142857142857143,
+            "f1": 0.7547169811320756
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8076923076923077,
+            "recall": 0.4772727272727273,
+            "f1": 0.6000000000000001
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6470588235294118,
+            "recall": 0.4074074074074074,
+            "f1": 0.5
+          }
+        },
+        "loss": 0.6821726163228353
+      }
+    },
+    {
+      "epoch": 22,
+      "train_loss": 0.6285752883324256,
+      "validation": {
+        "precision": 0.6766917293233082,
+        "recall": 0.37037037037037035,
+        "f1": 0.4787234042553192,
+        "accuracy": 0.7927519818799547,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2,
+            "recall": 0.11764705882352941,
+            "f1": 0.14814814814814817
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.675,
+            "recall": 0.675,
+            "f1": 0.675
+          },
+          "QUANTITY": {
+            "precision": 0.8,
+            "recall": 0.7142857142857143,
+            "f1": 0.7547169811320756
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8,
+            "recall": 0.45454545454545453,
+            "f1": 0.5797101449275363
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6470588235294118,
+            "recall": 0.4074074074074074,
+            "f1": 0.5
+          }
+        },
+        "loss": 0.6806013782819113
+      }
+    },
+    {
+      "epoch": 23,
+      "train_loss": 0.6215419540038476,
+      "validation": {
+        "precision": 0.6716417910447762,
+        "recall": 0.37037037037037035,
+        "f1": 0.47745358090185674,
+        "accuracy": 0.7927519818799547,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2,
+            "recall": 0.11764705882352941,
+            "f1": 0.14814814814814817
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.6585365853658537,
+            "recall": 0.675,
+            "f1": 0.6666666666666667
+          },
+          "QUANTITY": {
+            "precision": 0.8,
+            "recall": 0.7142857142857143,
+            "f1": 0.7547169811320756
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8,
+            "recall": 0.45454545454545453,
+            "f1": 0.5797101449275363
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6470588235294118,
+            "recall": 0.4074074074074074,
+            "f1": 0.5
+          }
+        },
+        "loss": 0.6789933244387308
+      }
+    },
+    {
+      "epoch": 24,
+      "train_loss": 0.6252736907738906,
+      "validation": {
+        "precision": 0.6818181818181818,
+        "recall": 0.37037037037037035,
+        "f1": 0.48,
+        "accuracy": 0.7938844847112118,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2,
+            "recall": 0.11764705882352941,
+            "f1": 0.14814814814814817
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.6923076923076923,
+            "recall": 0.675,
+            "f1": 0.6835443037974683
+          },
+          "QUANTITY": {
+            "precision": 0.8,
+            "recall": 0.7142857142857143,
+            "f1": 0.7547169811320756
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8,
+            "recall": 0.45454545454545453,
+            "f1": 0.5797101449275363
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6470588235294118,
+            "recall": 0.4074074074074074,
+            "f1": 0.5
+          }
+        },
+        "loss": 0.6787611444791158
+      }
+    },
+    {
+      "epoch": 25,
+      "train_loss": 0.6189031325853788,
+      "validation": {
+        "precision": 0.6893939393939394,
+        "recall": 0.37448559670781895,
+        "f1": 0.48533333333333345,
+        "accuracy": 0.7950169875424689,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2,
+            "recall": 0.11764705882352941,
+            "f1": 0.14814814814814817
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.7105263157894737,
+            "recall": 0.675,
+            "f1": 0.6923076923076923
+          },
+          "QUANTITY": {
+            "precision": 0.8,
+            "recall": 0.7142857142857143,
+            "f1": 0.7547169811320756
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8076923076923077,
+            "recall": 0.4772727272727273,
+            "f1": 0.6000000000000001
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6470588235294118,
+            "recall": 0.4074074074074074,
+            "f1": 0.5
+          }
+        },
+        "loss": 0.6772648493448893
+      }
+    },
+    {
+      "epoch": 26,
+      "train_loss": 0.6151894972874568,
+      "validation": {
+        "precision": 0.6893939393939394,
+        "recall": 0.37448559670781895,
+        "f1": 0.48533333333333345,
+        "accuracy": 0.7950169875424689,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2,
+            "recall": 0.11764705882352941,
+            "f1": 0.14814814814814817
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.7105263157894737,
+            "recall": 0.675,
+            "f1": 0.6923076923076923
+          },
+          "QUANTITY": {
+            "precision": 0.8,
+            "recall": 0.7142857142857143,
+            "f1": 0.7547169811320756
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8076923076923077,
+            "recall": 0.4772727272727273,
+            "f1": 0.6000000000000001
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6470588235294118,
+            "recall": 0.4074074074074074,
+            "f1": 0.5
+          }
+        },
+        "loss": 0.6767500440279642
+      }
+    },
+    {
+      "epoch": 27,
+      "train_loss": 0.6155027288656968,
+      "validation": {
+        "precision": 0.6893939393939394,
+        "recall": 0.37448559670781895,
+        "f1": 0.48533333333333345,
+        "accuracy": 0.7950169875424689,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2,
+            "recall": 0.11764705882352941,
+            "f1": 0.14814814814814817
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.7105263157894737,
+            "recall": 0.675,
+            "f1": 0.6923076923076923
+          },
+          "QUANTITY": {
+            "precision": 0.8,
+            "recall": 0.7142857142857143,
+            "f1": 0.7547169811320756
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8076923076923077,
+            "recall": 0.4772727272727273,
+            "f1": 0.6000000000000001
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6470588235294118,
+            "recall": 0.4074074074074074,
+            "f1": 0.5
+          }
+        },
+        "loss": 0.6760290066401163
+      }
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.6122927367687225,
+      "validation": {
+        "precision": 0.6842105263157895,
+        "recall": 0.37448559670781895,
+        "f1": 0.48404255319148937,
+        "accuracy": 0.7938844847112118,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2,
+            "recall": 0.11764705882352941,
+            "f1": 0.14814814814814817
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.7105263157894737,
+            "recall": 0.675,
+            "f1": 0.6923076923076923
+          },
+          "QUANTITY": {
+            "precision": 0.7692307692307693,
+            "recall": 0.7142857142857143,
+            "f1": 0.7407407407407408
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8076923076923077,
+            "recall": 0.4772727272727273,
+            "f1": 0.6000000000000001
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6470588235294118,
+            "recall": 0.4074074074074074,
+            "f1": 0.5
+          }
+        },
+        "loss": 0.6755247513453165
+      }
+    },
+    {
+      "epoch": 29,
+      "train_loss": 0.6054406280700977,
+      "validation": {
+        "precision": 0.6842105263157895,
+        "recall": 0.37448559670781895,
+        "f1": 0.48404255319148937,
+        "accuracy": 0.7938844847112118,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2,
+            "recall": 0.11764705882352941,
+            "f1": 0.14814814814814817
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.7105263157894737,
+            "recall": 0.675,
+            "f1": 0.6923076923076923
+          },
+          "QUANTITY": {
+            "precision": 0.7692307692307693,
+            "recall": 0.7142857142857143,
+            "f1": 0.7407407407407408
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8076923076923077,
+            "recall": 0.4772727272727273,
+            "f1": 0.6000000000000001
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6470588235294118,
+            "recall": 0.4074074074074074,
+            "f1": 0.5
+          }
+        },
+        "loss": 0.6752351125081381
+      }
+    },
+    {
+      "epoch": 30,
+      "train_loss": 0.620728109891598,
+      "validation": {
+        "precision": 0.6842105263157895,
+        "recall": 0.37448559670781895,
+        "f1": 0.48404255319148937,
+        "accuracy": 0.7938844847112118,
+        "per_entity": {
+          "ADDRESS": {
+            "precision": 0.2,
+            "recall": 0.11764705882352941,
+            "f1": 0.14814814814814817
+          },
+          "DATE": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "ITEM_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "ITEM_TOTAL": {
+            "precision": 0.7105263157894737,
+            "recall": 0.675,
+            "f1": 0.6923076923076923
+          },
+          "QUANTITY": {
+            "precision": 0.7692307692307693,
+            "recall": 0.7142857142857143,
+            "f1": 0.7407407407407408
+          },
+          "STORE_NAME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "TOTAL_AMOUNT": {
+            "precision": 0.8076923076923077,
+            "recall": 0.4772727272727273,
+            "f1": 0.6000000000000001
+          },
+          "UNIT_PRICE": {
+            "precision": 0.6470588235294118,
+            "recall": 0.4074074074074074,
+            "f1": 0.5
+          }
+        },
+        "loss": 0.6752199133237203
+      }
+    }
+  ]
+}
