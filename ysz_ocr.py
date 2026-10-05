@@ -19,22 +19,23 @@ def _to_json_serializable_box(box):
     return box.tolist() if hasattr(box, "tolist") else box
 
 
-def run_ocr(image_path: str, output_path: str = DEFAULT_OUTPUT_PATH) -> dict:
+def run_ocr(image_path: str, output_path: str = DEFAULT_OUTPUT_PATH, ocr_model=None) -> dict:
     if not os.path.exists(image_path):
         raise FileNotFoundError(f"이미지 파일을 찾을 수 없습니다: {image_path}")
 
     # PaddleOCR의 기본 한국어 기능 사용
-    ocr = PaddleOCR(
-        lang="korean",  # 한글, 영어, 숫자 인식
-        use_doc_orientation_classify=False,
-        use_doc_unwarping=False,
-        use_textline_orientation=False,
-        text_det_limit_side_len=1536,  # 이미지 변 길이 옵션. 기본값 960보다 크게
-        text_det_limit_type="max",
-        enable_mkldnn=False,
-    )
+    if ocr_model is None:
+        ocr_model = PaddleOCR(
+            lang="korean",
+            use_doc_orientation_classify=False,
+            use_doc_unwarping=False,
+            use_textline_orientation=False,
+            text_det_limit_side_len=1536,
+            text_det_limit_type="max",
+            enable_mkldnn=False,
+        )
 
-    result = ocr.predict(image_path)
+    result = ocr_model.predict(image_path)
 
     boxes = []
     texts = []
@@ -47,11 +48,6 @@ def run_ocr(image_path: str, output_path: str = DEFAULT_OUTPUT_PATH) -> dict:
             texts.extend(page["rec_texts"])  # 추출한 글씨
         if "rec_scores" in page:
             scores.extend(page["rec_scores"])  # 추출한 글씨에 대한 신뢰도
-
-    for b, t, s in zip(boxes, texts, scores):
-        print(f"인식한 박스의 위치 {b}")
-        print(f"인식한 텍스트 : {t}   (신뢰도={s:.3f})")
-        print("-------------------------------")
 
     ocr_items = []
 
